@@ -24,7 +24,7 @@ const projects = [];
 
 
 
-const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016];
+const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016];
 
 interface Resource {
   title: string;
