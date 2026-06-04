@@ -21,7 +21,7 @@ export default function TeamPage() {
           {helm.map((year, index) => (
             <div className='mb-16' key={index}>
               <h2 className='mb-8 text-center text-2xl font-bold text-white'>
-                {year.term === '2025-2026'
+                {year.term === '2026-2027'
                   ? 'Current Helm'
                   : `${year.term} Helm`}
               </h2>
