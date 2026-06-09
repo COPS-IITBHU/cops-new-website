@@ -10,6 +10,32 @@ export interface Achievement {
 
 const achievements: Achievement[] = [
   {
+    title: 'Google Summer of Code 2026',
+    level: 'Open Source Fellowship',
+    description:
+      '5 students were selected for the prestigious Google Summer of Code program.',
+    year: 2026,
+    isStarred: true,
+    category: 'dev',
+  },
+  {
+    title: 'Open Source Fellowship - LFX & SOB 2026',
+    level: 'Open Source Fellowship',
+    description:
+      'Two students were accepted as mentees in the LFX Mentorship Spring 2026 and the Summer of Bitcoin program.',
+    year: 2026,
+    isStarred: false,
+    category: 'dev',
+  },
+  {
+    title: '4th position at the 14th Inter IIT Tech Meet',
+    level: 'Inter-College Competition',
+    description:
+      'Outstanding performance in Inter-IIT Tech Meet with 1 Gold and 4 Bronze medals.',
+    year: 2025,
+    isStarred: true,
+  },
+  {
     title: 'Google Summer of Code 2023',
     level: 'Open Source Fellowship',
     description:
