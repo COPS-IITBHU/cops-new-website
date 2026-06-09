@@ -90,9 +90,16 @@ const Footer = () => {
                 </div>
                 <div className='min-w-0 flex-1'>
                   <h3 className='text-lg font-semibold text-white'>Location</h3>
-                  <p className='text-sm text-gray-400 md:text-base'>
-                    {contactInfo.add}
-                  </p>
+                  <a
+                    href={`https://maps.google.com/?q=${contactInfo.add}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='cursor-pointer transition hover:text-white'
+                  >
+                    <p className='text-sm text-gray-400 md:text-base'>
+                      {contactInfo.add}
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
