@@ -18,7 +18,7 @@ const NotFound = () => {
           enableHover={true}
           fontSize={50}
         >
-          nope don&apos;t have that
+          nope, we don&apos;t have that
         </FuzzyText>
       </div>
     </div>
