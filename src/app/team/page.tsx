@@ -25,22 +25,20 @@ export default function TeamPage() {
                   ? 'Current Helm'
                   : `${year.term} Helm`}
               </h2>
-              <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center'>
+              <div className='grid justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
                 {year.team?.map((person, personIndex) => {
                   const isCurrentTerm = year.term === '2025-2026';
                   const isLastItem = personIndex === year.team.length - 1;
                   const remainder = year.team.length % 3;
                   const shouldCenter = isLastItem && remainder === 1;
-                  
+
                   return (
                     <div
-                      className={`flex flex-col items-center rounded-lg border p-6 text-center shadow-2xl backdrop-blur-xl transition-all duration-300 w-full max-w-sm ${
+                      className={`flex w-full max-w-sm flex-col items-center rounded-lg border p-6 text-center shadow-2xl backdrop-blur-xl transition-all duration-300 ${
                         isCurrentTerm
                           ? 'border-[#68d9d9]/30 bg-white/10 hover:border-[#68d9d9]/50 hover:bg-white/15 hover:shadow-lg hover:shadow-[#68d9d9]/20'
                           : 'border-white/20 bg-white/10 hover:border-white/30 hover:bg-white/15'
-                      } ${
-                        shouldCenter ? 'lg:col-start-2' : ''
-                      }`}
+                      } ${shouldCenter ? 'lg:col-start-2' : ''}`}
                       key={personIndex}
                     >
                       {/* Profile Photo */}
@@ -72,7 +70,7 @@ export default function TeamPage() {
                         </p>
                         {person.email && (
                           <a
-                            className='mt-1 text-xs text-gray-400 block'
+                            className='mt-1 block text-xs text-gray-400'
                             href={`mailto:${person.email}`}
                           >
                             {person.email}
@@ -81,7 +79,7 @@ export default function TeamPage() {
                       </div>
 
                       {/* Social Icons */}
-                      <div className='flex justify-center space-x-2 mt-auto'>
+                      <div className='mt-auto flex justify-center space-x-2'>
                         {person.socials.website && (
                           <a
                             href={person.socials.website}
@@ -98,7 +96,7 @@ export default function TeamPage() {
                             href={person.socials.linkedin}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600/20 to-blue-700/20 text-blue-500 transition-all duration-300 hover:scale-110 hover:bg-blue-600/30'
+                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-blue-600/20 to-blue-700/20 text-blue-500 transition-all duration-300 hover:scale-110 hover:bg-blue-600/30'
                             aria-label='LinkedIn'
                           >
                             <FaLinkedin className='h-3.5 w-3.5' />
@@ -109,7 +107,7 @@ export default function TeamPage() {
                             href={person.socials.github}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-gray-700/20 to-gray-800/20 text-gray-400 transition-all duration-300 hover:scale-110 hover:bg-gray-700/30'
+                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-gray-700/20 to-gray-800/20 text-gray-400 transition-all duration-300 hover:scale-110 hover:bg-gray-700/30'
                             aria-label='GitHub'
                           >
                             <FaGithub className='h-3.5 w-3.5' />
@@ -120,7 +118,7 @@ export default function TeamPage() {
                             href={person.socials.instagram}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500/20 to-pink-500/20 text-purple-400 transition-all duration-300 hover:scale-110 hover:bg-purple-500/30'
+                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-purple-500/20 to-pink-500/20 text-purple-400 transition-all duration-300 hover:scale-110 hover:bg-purple-500/30'
                             aria-label='Instagram'
                           >
                             <FaInstagram className='h-3.5 w-3.5' />
@@ -131,7 +129,7 @@ export default function TeamPage() {
                             href={person.socials.twitter}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500/20 to-blue-600/20 text-blue-400 transition-all duration-300 hover:scale-110 hover:bg-blue-500/30'
+                            className='flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-blue-500/20 to-blue-600/20 text-blue-400 transition-all duration-300 hover:scale-110 hover:bg-blue-500/30'
                             aria-label='Twitter'
                           >
                             <FaTwitter className='h-3.5 w-3.5' />
