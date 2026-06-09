@@ -94,20 +94,20 @@ export default function Navbar() {
                 Projects
               </Link> */}
               <Link
-                href='/resources'
-                className={`${pathName === '/resources' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white`}
+                href='/verticals'
+                className={`${pathName === '/verticals' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-yellow-500 hover:text-black`}
               >
-                Resources
+                Verticals
               </Link>
               <Link
                 href='/team'
-                className={`${pathName === '/team' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white`}
+                className={`${pathName === '/team' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-yellow-500 hover:text-black`}
               >
                 Team
               </Link>
               <Link
                 href='/achievements'
-                className={`${pathName === '/achievements' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white`}
+                className={`${pathName === '/achievements' ? 'bg-white/10' : ''} rounded-xl px-4 py-2 text-sm font-medium transition-colors hover:bg-yellow-500 hover:text-black`}
               >
                 Achievements
               </Link>

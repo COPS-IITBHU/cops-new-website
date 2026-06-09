@@ -5,7 +5,7 @@ import HeroSubsection from '@/components/layout/HeroSubsection';
 export default function Home() {
   return (
     <div className='min-h-screen'>
-      <HeroSubsection />
+      <HeroSubsection name='Club 0f ProgrammerS' />
       {/* <AchievementsSubsection /> */}
       {/* <ProjectsSubsection /> */}
     </div>
