@@ -3,6 +3,7 @@ import HeroSubsection from '@/components/layout/HeroSubsection';
 // import ProjectsSubsection from '@/components/layout/ProjectsSubsection';
 import AboutSection from '@/app/verticals/ig/AboutSection'
 import WhatWeDo from '@/app/verticals/ig/WhatWeDo'
+import VisionSection from './VisionSection';
 export default function Home() {
   return (
     <div className='min-h-screen'>
@@ -11,6 +12,7 @@ export default function Home() {
       {/* <ProjectsSubsection /> */}
       <AboutSection />
       <WhatWeDo />
+      <VisionSection />
     </div>
   );
 }
