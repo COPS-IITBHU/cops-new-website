@@ -83,7 +83,7 @@ export default function AboutSection() {
                 Natural Language Processing, Reinforcement Learning, Generative
                 AI, and Large Language Models. Over the years, members of the
                 group have also contributed to several research publications,
-                demonstrating the club's commitment to both innovation and
+                demonstrating the club&rsquo;s commitment to both innovation and
                 academic excellence.
               </p>
 

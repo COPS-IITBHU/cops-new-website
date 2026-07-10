@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 
 import TeamCard from '@/app/verticals/ig/TeamCard';
+import { TeamMember } from "@/data/igTeam";
 
 import {
   coordinator,
@@ -15,7 +16,7 @@ function Section({
   members,
 }: {
   title: string;
-  members: any[];
+  members: TeamMember[];
 }) {
   return (
     <section className="mb-24">
@@ -29,17 +30,19 @@ function Section({
         {title}
       </motion.h2>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-
-        {members.map((member, index) => (
-          <TeamCard
-            key={member.id}
-            member={member}
-            delay={index * 0.12}
-          />
-        ))}
-
-      </div>
+      <div className="flex flex-wrap justify-center gap-8">
+  {members.map((member, index) => (
+    <div
+      key={member.id}
+      className="w-full md:w-[340px]"
+    >
+      <TeamCard
+        member={member}
+        delay={index * 0.1}
+      />
+    </div>
+  ))}
+</div>
 
     </section>
   );
@@ -78,19 +81,19 @@ export default function TeamPage() {
         </motion.div>
 
         <Section
-          title="Coordinator"
-          members={coordinator}
-        />
+  title="Secretary"
+  members={coordinator}
+/>
 
-        <Section
-          title="Mentors"
-          members={mentors}
-        />
+<Section
+  title="Joint Secretaries"
+  members={mentors}
+/>
 
-        <Section
-          title="Core Team"
-          members={coreTeam}
-        />
+<Section
+  title="Core Team"
+  members={coreTeam}
+/>
 
       </div>
 
