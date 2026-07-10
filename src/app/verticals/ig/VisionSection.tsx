@@ -28,7 +28,7 @@ export default function VisionSection() {
 
           <div className="rounded-3xl border border-white/20 bg-white/10 p-10 shadow-2xl backdrop-blur-xl md:p-14">
 
-            <p className="text-xl leading-10 text-gray-300">
+            <p className="text-xl leading-10 text-gray-200">
               We believe that learning Artificial Intelligence is most effective
               through collaboration, curiosity, and continuous exploration.
               Our vision is to cultivate a strong research culture where
@@ -38,7 +38,7 @@ export default function VisionSection() {
 
             <div className="my-10 h-px w-full bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent" />
 
-            <p className="text-lg leading-9 text-gray-400">
+            <p className="text-lg leading-9 text-gray-300">
               Through mentorship, collaborative projects, workshops, and
               research discussions, we empower every member—from beginners to
               experienced developers—to build intelligent systems that solve

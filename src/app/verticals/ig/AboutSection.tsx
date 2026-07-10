@@ -30,7 +30,7 @@ export default function AboutSection() {
             COPS Intelligence Group
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-400 md:text-xl">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-300 md:text-xl">
             Exploring Artificial Intelligence, Machine Learning,
             Deep Learning, Computer Vision, Large Language Models,
             and building the next generation of intelligent systems.
